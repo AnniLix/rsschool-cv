@@ -17,4 +17,25 @@ I believe that I can improve my knowledge and development skills and get a job i
 * VS Code
 * Figma
 ---
-
+**Code example:**
+``` 
+function getSum(a,b)
+{
+  let sum=0;
+  let A=Math.min(a,b);
+  let B=Math.max(a,b);
+   for(let i=A;i<=B;i++)sum+=i;
+  return sum;
+}
+```
+---
+**Education:**
+* Bachelor of geography and English teacher
+Volodymyr Vynnychenko Pedagogical University
+* Frontend developer course from [SheCodes] (https://www.shecodes.io/)
+---
+**Languages:**
+* English: intermediate/upper-intermediate
+* Ukrainian: native
+* Russian: upper-intermediate
+* Czech: intermediate
