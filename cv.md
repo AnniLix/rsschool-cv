@@ -18,6 +18,7 @@ I believe that I can improve my knowledge and development skills and get a job i
 * GitHub and Git
 * VS Code
 * Figma
+
 # Code example:
 ``` 
 function getSum(a,b)
@@ -29,6 +30,7 @@ function getSum(a,b)
   return sum;
 }
 ```
+
 # Education:
 * **Bachelor of geography and English teacher**
     * Volodymyr Vynnychenko Pedagogical University
