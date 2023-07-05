@@ -1,7 +1,116 @@
+@font-face {
+  font-family: 'Tenor Sans', sans-serif;
+  src: url('/assets/images/fonts/TenorSans-Regular.ttf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Tenor Sans', sans-serif;
+  src: url('/assets/images/fonts/TenorSans-Regular.ttf');
+  font-weight: 400;
+}
+
 body {
   background: #f5f5ef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  margin-bottom: auto;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  color: black;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.profile-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.summary-section {
+  width: 434px;
+  text-align: justify;
+}
+
+.section-title {
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin: 20px 0;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 194px;
+  height: 1px;
+  left: 65%;
+  bottom: 527px;
+  background-color: #797976;
 }
 
 .photo {
-  max-width: 20%;
+  max-width: 22%;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: #7c2828;
+}
+
+.summary {
+  font-size: 10px;
+  font-weight: 100;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
 }
