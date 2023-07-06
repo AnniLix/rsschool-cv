@@ -1,3 +1,8 @@
+:root {
+  --default-font-family: 'Playfair Display', serif;
+  --heading-color: #370000;
+}
+
 @font-face {
   font-family: 'Tenor Sans', sans-serif;
   src: url('/assets/images/fonts/TenorSans-Regular.ttf');
@@ -5,8 +10,8 @@
 }
 
 @font-face {
-  font-family: 'Tenor Sans', sans-serif;
-  src: url('/assets/images/fonts/TenorSans-Regular.ttf');
+  font-family: 'Playfair Display', serif;
+  src: url('/assets/images/fonts/PlayfairDisplaySC-Regular.ttf');
   font-weight: 400;
 }
 
@@ -18,7 +23,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  font-family: 'Tenor Sans', sans-serif;
+  font-family: var(--default-font-family);
 }
 
 html {
@@ -28,6 +33,12 @@ html {
 * {
   box-sizing: border-box;
 }
+
+/* li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+} */
 
 .main {
   margin-bottom: auto;
@@ -59,6 +70,10 @@ html {
   justify-content: space-between;
 }
 
+.section {
+  border-bottom: 1px solid #672f2f;
+}
+
 .profile-section {
   display: flex;
   justify-content: space-around;
@@ -67,10 +82,17 @@ html {
 }
 
 .profile-title {
+  font-family: 'Playfair Display', serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-right: 90px;
+}
+
+.photo {
+  max-width: 22%;
+  margin-left: 100px;
 }
 
 .summary-section {
@@ -78,25 +100,44 @@ html {
   text-align: justify;
 }
 
-.section-title {
+.section-main-title {
   font-size: 50px;
   font-weight: 400;
+  color: var(--heading-color);
   letter-spacing: 5px;
   margin: 20px 0;
 }
 
-.section-title::after {
+.section-main-title::after {
   content: '';
   position: absolute;
   width: 194px;
   height: 1px;
-  left: 65%;
-  bottom: 527px;
+  left: 62%;
+  bottom: 557px;
   background-color: #797976;
 }
 
-.photo {
-  max-width: 22%;
+.section-title {
+  font-size: 30px;
+  color: var(--heading-color);
+  letter-spacing: 3px;
+}
+
+.code {
+  padding-left: 119px;
+}
+
+.section-skills {
+  padding-left: 240px;
+}
+
+.section-code {
+  margin-right: 223px;
+}
+
+.section-code, .section-skills {
+  margin-top: 30px;
 }
 
 .nav-link:hover {
@@ -107,6 +148,26 @@ html {
 .summary {
   font-size: 10px;
   font-weight: 100;
+}
+
+.profile-contacts {
+  margin-top: -61px;
+  margin-left: 231px;
+  padding: 10px 14px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0;
+  font-size: 20px;
+  list-style: none;
+  transition: all 100ms ease-in-out;
+}
+
+.contact-links a {
+  color: black;
 }
 
 @media (max-width: 768px) {

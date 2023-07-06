@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/images/logo.ico">
 </head>
@@ -33,7 +39,7 @@
       <section class="section profile-section" id="profile">
         <img class="photo" src="assets/images/me.jpg" alt="my-photo">
         <div class="profile-title">
-          <h1 class="section-title">Anna Balitska</h1>
+          <h1 class="section-main-title">Anna Balitska</h1>
           <h2 class="profile-subtitle">Junior front-end developer</h2>
           <p class="summary-section">I am 20 years old, I recently graduated from a pedagogical university. I became
             interested in programming
@@ -48,11 +54,66 @@
             get a job in the future.</p>
         </div>
       </section>
+      <!-- <div class="row mt-4">
+        <div class="col-6"> -->
+          <section class="section-skills">
+            <h3 class="section-title">Skills</h3>
+            <ul class="skills-wrapper">
+              <li class="skills-item">HTML</li>
+              <li class="skills-item">CSS</li>
+              <li class="skills-item">GIT</li>
+              <li class="skills-item">WebPack</li>
+              <li class="skills-item">JavaScript</li>
+              <li class="skills-item">Git, Github</li>
+              <li class="skills-item">Figma</li>
+            </ul>
+          </section>
+        <!-- </div> -->
+        <!-- <div class="col-6"> -->
+          <section class="section-code">
+            <h3 class="section-title code">Code</h3>
+            <pre class="pre">
+              <code>
+                function getSum(a,b)
+                {
+                let sum=0;
+                let A=Math.min(a,b);
+                let B=Math.max(a,b);
+                for(let i=A;i<=B;i++)sum+=i; return sum; }
+              </code>
+            </pre>
+          </section>
+        <!-- </div> -->
+      <!-- </div> -->
     </div>
   </main>
   <footer>
     <div class="container">
-
+      <div class="profile-contacts d-flex justify-content-center">
+        <section class="section-contacts">
+          <ul class="contact-links">
+            <ol class="contact-links-mail">
+              <a href="aa.llin.223@gmail.com" target="_blank" title="Email">
+                <i class="fa-thin fa-circle-envelope"></i>
+              </a>
+            </ol>
+            <li class="contact-links-github m-4">
+              <a href="https://github.com/AnniLix" target="_blank" title="Github">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li class="contact-links-linkedin m-4">
+              <a href="https://www.linkedin.com/in/anna-balitska-234367242/" target="_blank" title="LinkedIn">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="contact-links-instagram m-4">
+              <a href="https://instagram.com/anya13731" target="_blank" title="instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+          </ul>
+        </section>
+      </div>
     </div>
   </footer>
 </body>
