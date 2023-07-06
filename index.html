@@ -26,9 +26,10 @@
             <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
             <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
             <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
             <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-            <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
           </ul>
         </nav>
       </div>
@@ -38,10 +39,11 @@
     <div class="container main-container">
       <section class="section profile-section" id="profile">
         <img class="photo" src="assets/images/me.jpg" alt="my-photo">
-        <div class="profile-title">
+        <div class="profile-title" id="summary">
           <h1 class="section-main-title">Anna Balitska</h1>
           <h2 class="profile-subtitle">Junior front-end developer</h2>
-          <p class="summary-section">I am 20 years old, I recently graduated from a pedagogical university. I became
+          <p class="summary-section">I am 20 years old, I recently graduated from a pedagogical university.
+            I became
             interested in programming
             last year. I
             tried courses from the university, but they weren’t that easy, so I didn’t get much out of it. But I
@@ -54,25 +56,25 @@
             get a job in the future.</p>
         </div>
       </section>
-      <!-- <div class="row mt-4">
-        <div class="col-6"> -->
-          <section class="section-skills">
-            <h3 class="section-title">Skills</h3>
+      <div class="row mt-4">
+        <div class="col-6">
+          <section class="section section-skills">
+            <h3 class="section-title" id="skills">Skills</h3>
             <ul class="skills-wrapper">
-              <li class="skills-item">HTML</li>
-              <li class="skills-item">CSS</li>
-              <li class="skills-item">GIT</li>
-              <li class="skills-item">WebPack</li>
-              <li class="skills-item">JavaScript</li>
-              <li class="skills-item">Git, Github</li>
-              <li class="skills-item">Figma</li>
+              <li class="section-item">HTML</li>
+              <li class="section-item">CSS</li>
+              <li class="section-item">GIT</li>
+              <li class="section-item">WebPack</li>
+              <li class="section-item">JavaScript</li>
+              <li class="section-item">Git, Github</li>
+              <li class="section-item">Figma</li>
             </ul>
           </section>
-        <!-- </div> -->
-        <!-- <div class="col-6"> -->
-          <section class="section-code">
+        </div>
+        <div class="col-6">
+          <section class="section section-code" id="code">
             <h3 class="section-title code">Code</h3>
-            <pre class="pre">
+            <pre class="code-example">
               <code>
                 function getSum(a,b)
                 {
@@ -83,14 +85,61 @@
               </code>
             </pre>
           </section>
-        <!-- </div> -->
-      <!-- </div> -->
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-6">
+          <section class="section section-courses" id="courses">
+            <h3 class="section-title">Courses</h3>
+            <ul class="courses-wrapper">
+              <li class="section-item"> <span class="courses-item">SheCodes:</span> front-end developer
+              </li>
+              <li class="section-item"> <span class="courses-item">GoIt: </span>Marathon with HTML&CSS</li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-6">
+          <section class="section section-education" id="education">
+            <h3 class="section-title">Education</h3>
+            <h5>Central Ukrainian Pedagogical University</h5>
+            <p class="period">September 2018 - June 2023 | Ukr</p>
+          </section>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-6">
+          <section class="section section-projects" id="projects">
+            <h3 class="section-title">Projects</h3>
+            <ul class="projects-wrapper">
+              <li class="section-item"> <a href="https://lustrous-tapioca-94e4ed.netlify.app/" target="_blank">Weather
+                  project</a></li>
+              <li class="section-item"> <a href="https://peppy-scone-edc26e.netlify.app/" target="_blank">Dictionary
+                  App</a></li>
+              <li class="section-item"> <a href="https://vermillion-toffee-ddfd0e.netlify.app/" target="_blank">Car
+                  rent</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-6">
+          <section class="section section-languages" id="languages">
+            <h3 class="section-title">Languages</h3>
+            <ul class="languages-wrapper">
+              <li class="section-item"> <span class="languages-item">English: </span>intermediate/upper-intermediate
+              </li>
+              <li class="section-item"> <span class="languages-item">Ukrainian: </span>native</li>
+              <li class="section-item"> <span class="languages-item">Russian:</span> upper-intermediate
+              </li>
+              <li class="section-item"> <span class="languages-item">Czech: </span>intermediate</li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
     <div class="container">
       <div class="profile-contacts d-flex justify-content-center">
-        <section class="section-contacts">
+        <section class="section-contacts" id="contacts">
           <ul class="contact-links">
             <ol class="contact-links-mail">
               <a href="aa.llin.223@gmail.com" target="_blank" title="Email">
