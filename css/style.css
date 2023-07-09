@@ -1,0 +1,250 @@
+:root {
+  --default-font-family: 'Playfair Display', serif;
+  --heading-color: #370018;
+}
+
+@font-face {
+  font-family: 'Playfair Display', serif;
+  src: url('/assets/images/fonts/PlayfairDisplaySC-Regular.ttf');
+  font-weight: 400;
+}
+
+body {
+  background: #f5f5ef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-family: var(--default-font-family);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  color: black;
+}
+
+.main-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section {
+  border-bottom: 1px solid #672f2f;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.profile-title {
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 90px;
+}
+
+.photo {
+  max-width: 22%;
+  margin-left: 100px;
+  border-radius: 5px;
+}
+
+.summary-section {
+  width: 434px;
+  text-align: justify;
+}
+
+.section-main-title {
+  font-size: 50px;
+  font-weight: 400;
+  color: var(--heading-color);
+  letter-spacing: 5px;
+  margin: 20px 0;
+}
+
+.section-main-title::after {
+  content: '';
+  position: absolute;
+  width: 194px;
+  height: 1px;
+  left: 62%;
+  bottom: 557px;
+  background-color: #797976;
+}
+
+.section-title {
+  font-size: 30px;
+  color: var(--heading-color);
+  letter-spacing: 3px;
+}
+
+.section-skills {
+  padding-left: 200px;
+  padding-bottom: 21px;
+}
+
+.code-example {
+  width: 100%;
+  background-color: rgb(247, 247, 241);
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: #7c2828;
+}
+
+.summary {
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.profile-contacts {
+  margin-left: 2px;
+  padding: 10px 14px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  transition: all 100ms ease-in-out;
+}
+
+.contact-link-rsschool {
+  padding-left: 197px;
+  text-align: right;
+}
+
+.contact-links a {
+  color: black;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px 14px;
+}
+
+.contact-links .github:hover,
+.contact-links .linkedin:hover,
+.contact-links .instagram:hover {
+  color: white;
+  transition: all 100ms ease-in-out;
+  background: black;
+}
+
+.section-courses,
+.section-skills,
+.section-projects {
+  padding-left: 200px;
+}
+
+.section-courses {
+  padding-bottom: 2px;
+}
+
+.section-projects {
+  padding-bottom: 28px;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+.section-item {
+  position: relative;
+  font-size: 18px;
+  padding-left: 29px;
+}
+
+.section-item a {
+  text-decoration: none;
+  color: #370000;
+  font-weight: bold;
+  transition: all 100ms ease-in-out;
+}
+
+.section-item a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.skills-wrapper,
+.courses-wrapper,
+.projects-wrapper,
+.languages-wrapper {
+  list-style: none;
+}
+
+.section-item::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background-size: 14px 14px;
+  background-image: url(../assets/images/tick-box.svg);
+}
+
+.courses-item,
+.languages-item {
+  font-weight: bold;
+  color: #370000;
+}
+
+.footer-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rss-logo {
+  width: 30%;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 10px;
+  }
+}
